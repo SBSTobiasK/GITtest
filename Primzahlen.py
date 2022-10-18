@@ -1,5 +1,5 @@
 iteration = 1
-saveprime = open("saveprime.txt", "w")
+saveprime = open("saveprime.csv", "w")
 prime_candidate = input("Geben sie eine Zahl ein: ")
 prime_candidate = int(prime_candidate)
 while iteration < prime_candidate:
@@ -12,3 +12,4 @@ while iteration < prime_candidate:
   if loop > iteration/2:
     print(iteration)
     saveprime.write(str(iteration))
+    saveprime.write(";")
