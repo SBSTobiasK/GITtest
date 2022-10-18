@@ -13,3 +13,4 @@ while iteration < prime_candidate:
     print(iteration)
     saveprime.write(str(iteration))
     saveprime.write(";")
+saveprime.close()
