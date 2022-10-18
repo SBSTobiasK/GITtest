@@ -1,7 +1,6 @@
 file1 = open("venv/filecount.txt", "r")
-ausgabe = file1.readline()
-while ausgabe != "":
-    print(ausgabe)
-    ausgabe = file1.readline()
+ausgabe = file1.read()
+
+print(ausgabe)
 
 file1.close()
